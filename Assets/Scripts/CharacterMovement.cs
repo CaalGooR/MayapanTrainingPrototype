@@ -37,7 +37,7 @@ public class CharacterMovement : MonoBehaviour {
 		}
 
 		Vector3 moveVector = Vector3.zero;
-		moveVector.x = Input.GetAxis ("Horizontal")*5.0f;
+		moveVector.x = Input.GetAxis ("Horizontal") * 5.0f;
 		moveVector.y = verticalVelocity;
 		moveVector.z = Input.GetAxis("Vertical") * 5.0f;
 		controller.Move (moveVector * Time.deltaTime);			
